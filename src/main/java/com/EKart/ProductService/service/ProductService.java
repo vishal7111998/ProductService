@@ -17,5 +17,5 @@ public interface ProductService {
 	
 	public Product createProduct(Product product);
 	
-	public Product removeProduct(long id);
+	public Product removeProduct(long id) throws ProductNotFoundException;
 }

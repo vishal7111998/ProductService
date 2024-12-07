@@ -59,7 +59,7 @@ public class ProductController {
 
 	
 	@DeleteMapping("/{id}")
-	public Product removeProduct(@PathVariable("id") long id) {
+	public Product removeProduct(@PathVariable("id") long id) throws ProductNotFoundException {
 		return productService.removeProduct(id);
 	}
 	
